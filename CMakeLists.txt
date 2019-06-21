@@ -12,7 +12,7 @@ endif()
 
 project(Foundation
         LANGUAGES
-          C)
+          C CXX)
 enable_testing()
 
 # NOTE(compnerd) default to /MD or /MDd by default based on the configuration.
@@ -470,6 +470,7 @@ if(ENABLE_TESTING)
                          TestFoundation/TestLengthFormatter.swift
                          TestFoundation/TestMassFormatter.swift
                          TestFoundation/TestMeasurement.swift
+                         TestFoundation/TestMeasurementFormatter.swift
                          TestFoundation/TestNotificationCenter.swift
                          TestFoundation/TestNotificationQueue.swift
                          TestFoundation/TestNotification.swift

@@ -7,7 +7,7 @@ project(CoreFoundation
         VERSION
           1338
         LANGUAGES
-          ASM C)
+          ASM C CXX)
 
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_STANDARD_REQUIRED YES)
@@ -82,6 +82,7 @@ add_framework(CoreFoundation
                 Locale.subproj/CFICULogging.h
                 Locale.subproj/CFLocaleInternal.h
                 Locale.subproj/CFLocale_Private.h
+                Locale.subproj/CFMeasureFormatter.h
                 # NumberDate
                 NumberDate.subproj/CFBigNumber.h
                 # Parsing
@@ -147,6 +148,7 @@ add_framework(CoreFoundation
                 URL.subproj/CFURLPriv.h
                 URL.subproj/CFURLSessionInterface.h
                 Locale.subproj/CFDateIntervalFormatter.h
+                Locale.subproj/CFMeasureFormatter.h
 
                 # AppServices
                 AppServices.subproj/CFNotificationCenter.h
@@ -240,6 +242,8 @@ add_framework(CoreFoundation
                 Locale.subproj/CFLocale.c
                 Locale.subproj/CFLocaleIdentifier.c
                 Locale.subproj/CFLocaleKeys.c
+                Locale.subproj/CFMeasureFormatter.c
+                Locale.subproj/CFMeasureFormatterICU.cpp
                 Locale.subproj/CFNumberFormatter.c
                 # NumberData
                 NumberDate.subproj/CFBigNumber.c
